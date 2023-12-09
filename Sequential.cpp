@@ -1,3 +1,9 @@
+//Nathan Clark, CS 4170 Parallel Computing
+//This Program is meant to compare the runtimes of
+//a sequential program and parallel processes of differing amounts.
+//This program will also run the parallel program on different
+//sizes of matirces.
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -7,31 +13,37 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	int row1 = 5000;
-	int	col1 = 2000;
-	int	col2 = 2500;
+	int col1 = 2000;
+	int col2 = 2500;
+
+	if (*argv[1] == 'T') {
+        row1 = 5;
+        col1 = 2;
+        col2 = 3;
+    	}	
 
 	if (argv[1] == "A") {
 		int row1 = 50;
 		int col1 = 20;
-		int	col2 = 25;
+		int col2 = 25;
 	}
 
 	if (argv[1] == "B") {
 		int row1 = 500;
 		int col1 = 200;
-		int	col2 = 250;
+		int col2 = 250;
 	}
 
 	if (argv[1] == "C") {
 		int row1 = 5000;
 		int col1 = 2000;
-		int	col2 = 2500;
+		int col2 = 2500;
 	}
 
 	if (argv[1] == "D") {
 		int row1 = 50000;
 		int col1 = 20000;
-		int	col2 = 25000;
+		int col2 = 25000;
 	}
 
 	vector<vector<double>> A(row1, vector<double>(col1));
