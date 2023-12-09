@@ -23,12 +23,6 @@ int main(int argc, char* argv[]) {
     }
 
     if (*argv[1] == 'A') {
-        row1 = 5;
-        col1 = 2;
-        col2 = 3;
-    }
-
-    if (*argv[1] == 'A') {
         row1 = 50;            
         col1 = 20;
         col2 = 25;
